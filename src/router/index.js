@@ -4,9 +4,6 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
 import Home from '../components/Home';
-import HelloWorld from '../components/HelloWorld';
-import Counter from '../components/Counter';
-import Fifa from '../components/Fifa';
 
 const router = new VueRouter({
   pageRouting: true,
@@ -16,27 +13,6 @@ const router = new VueRouter({
       component: Home,
       meta: {
         title: 'Home',
-      },
-    },
-    {
-      path: '/hello',
-      component: HelloWorld,
-      meta: {
-        title: 'Hello World',
-      },
-    },
-    {
-      path: '/counter',
-      component: Counter,
-      meta: {
-        title: 'Counter',
-      },
-    },
-    {
-      path: '/fifa',
-      component: Fifa,
-      meta: {
-        title: 'Fifa',
       },
     },
     {path: '*', redirect: '/home'},
